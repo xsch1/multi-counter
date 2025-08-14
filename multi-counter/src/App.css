@@ -1,0 +1,65 @@
+/* 전체 앱 중앙 정렬 */
+.app {
+  max-width: 720px;
+  margin: 40px auto;
+  font-family: sans-serif;
+  text-align: center; /* 텍스트와 버튼 중앙 정렬 */
+}
+
+/* 상단 툴바 */
+.toolbar {
+  display: flex;
+  gap: 8px;
+  justify-content: center; /* 버튼 중앙 정렬 */
+  margin-bottom: 16px;
+}
+
+button {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+/* 주사위 리스트: 중앙 정렬 + 일정 간격 */
+.dice-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center; /* 중앙 정렬 */
+  padding: 0;
+}
+
+/* 주사위 카드 */
+.die {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; /* 숫자와 버튼 세로 배치 */
+  align-items: center;
+  justify-content: center;
+  width: 80px; /* 카드 고정 너비 */
+  min-height: 100px; /* 높이 고정 */
+}
+
+/* 주사위 숫자 크기 고정 */
+.face {
+  font-size: 24px;
+  font-weight: bold;
+  width: 40px; /* 숫자 박스 고정 폭 */
+  text-align: center;
+}
+
+/* 주사위 개별 버튼 영역 */
+.actions {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.summary {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
